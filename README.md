@@ -29,7 +29,7 @@ You’ll need Docker and Docker Compose installed. Clone this repository and run
 docker compose up --build
 ```
 
-The API will be available at [http://localhost:8000](http://localhost:8000) with interactive documentation at `/docs`. PostgreSQL runs on port **5432** and Adminer runs on port **8080**.
+The API will be available at [http://localhost:8000](http://localhost:8000). PostgreSQL runs on port **5432** and Adminer runs on port **8080**.
 
 To tear down the services and remove the database volume, run:
 
@@ -89,6 +89,3 @@ The service uses these tables (via SQLAlchemy):
 | **Assignment** | `id`, `course_id`, `name`, `type`, `max_points`                          | unique name per course; type is an enum   |
 | **Grade**  | `assignment_id`, `student_id`, `points`                                      | composite primary key; points ≥ 0         |
 
-## Notes & Next Steps
-
-This project is intentionally minimalist, serving as a foundation for a more complete gradebook system. You can extend it with features such as authentication, weighted categories, or a web frontend. Contributions and pull requests are welcome!
