@@ -1,0 +1,5 @@
+course_code,student_email,assignment_name,points
+CS101,alice@example.com,Quiz 1,9
+CS101,bob@example.com,Quiz 1,7
+CS101,alice@example.com,Project 1,95
+MATH201,bob@example.com,Midterm,88
